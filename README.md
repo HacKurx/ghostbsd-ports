@@ -63,13 +63,13 @@ To fetch from freebsd-ports.
 
 	git fetch freebsd
 
-To merge freebsd-ports master.
+To merge freebsd-ports main.
 
-	git merge freebsd/master
+	git merge freebsd/main
 
 If you don't have any conflict, you can push.
 
-	git push origin master
+	git push origin main
 
 If you have code conflicts, this is where the knowledge of maintaining ports comes to be necessary. When it is code related, it is not that hard. Most of the time is just a change that it was not able to do. For some reason, those are easy. When it comes to conflicts related to changes coming from us, we need to keep our code. The most common one is related to Mk files and Makefiles. FreeBSD does not contain the os ports, so merged that includes changes in Mk files that contain the code to recognize os ports will trigger a conflict.
 
@@ -83,7 +83,7 @@ It has two tags in the code, the HEAD, which is our master and the freebsd/maste
 
 When all the conflicts are fixed, you need to add, commit and push.
 
-	git add -A && git commit && git push origin master
+	git add -A && git commit && git push origin main
 
 ## To use the hook from FreeBSD adapted for GhostBSD.
 
